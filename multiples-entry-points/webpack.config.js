@@ -2,10 +2,15 @@ const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
-  entry: path.join(__dirname, 'index.js'),
+  entry: {
+    home: path.join(__dirname, 'src/index.js'),
+    precios: path.join(__dirname, 'src/precios.js'),
+    contacto: path.join(__dirname, 'src/contacto.js'),
+
+  },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'js/[name].js'
   },
   module: {
     rules: [
@@ -23,6 +28,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin('css/[namex].css')
+    new ExtractTextPlugin('css/[name].css')
   ]
 }
