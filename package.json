@@ -12,7 +12,8 @@
     "build:multi": "webpack --mode development --config ./multiples-entry-points/webpack.config.js",
     "build:dev": "webpack-dev-server --mode development --config ./webpack-dev-server/webpack.config.js",
     "build:babel": "webpack --mode development --config ./babel-loader/webpack.config.js",
-    "build:images": "webpack --mode development --config ./url-loader-images/webpack.config.js"
+    "build:images": "webpack --mode development --config ./url-loader-images/webpack.config.js",
+    "build:fonts": "webpack --mode development --config ./url-loader-fonts/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "babel-preset-es2016": "^6.24.1",
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
     "webpack": "^4.6.0",
