@@ -19,7 +19,8 @@
     "build:react": "webpack --mode development --config ./react/webpack.config.js",
     "build:sass": "webpack --mode development --config ./sass-loader/webpack.config.js",
     "build:stylus": "webpack --mode development --config ./stylus-loader/webpack.config.js",
-    "build:less": "webpack --mode development --config ./less-loader/webpack.config.js"
+    "build:less": "webpack --mode development --config ./less-loader/webpack.config.js",
+    "build:postcss": "webpack --mode development --config ./postcss-loader/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -45,6 +46,9 @@
     "less-loader": "^4.1.0",
     "nib": "^1.1.2",
     "node-sass": "^4.9.0",
+    "postcss": "^6.0.22",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-loader": "^2.1.5",
     "rupture": "^0.7.1",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
