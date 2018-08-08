@@ -22,7 +22,9 @@
     "build:less": "webpack --mode development --config ./less-loader/webpack.config.js",
     "build:postcss": "webpack --mode development --config ./postcss-loader/webpack.config.js",
     "build:prevent": "webpack --mode development --config ./prevent-duplication/webpack.config.js",
-    "build:vendor": "webpack --mode development --config ./vendor/webpack.config.js"
+    "build:vendor": "webpack --mode development --config ./vendor/webpack.config.js",
+    "build:dll": "webpack --mode development --config ./dll/webpack.dll.config.js",
+    "build:dll:src": "webpack --mode development --config ./dll/webpack.config.js"
   },
   "repository": {
     "type": "git",
