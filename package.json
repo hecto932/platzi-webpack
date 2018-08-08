@@ -21,7 +21,8 @@
     "build:stylus": "webpack --mode development --config ./stylus-loader/webpack.config.js",
     "build:less": "webpack --mode development --config ./less-loader/webpack.config.js",
     "build:postcss": "webpack --mode development --config ./postcss-loader/webpack.config.js",
-    "build:prevent": "webpack --mode development --config ./prevent-duplication/webpack.config.js"
+    "build:prevent": "webpack --mode development --config ./prevent-duplication/webpack.config.js",
+    "build:vendor": "webpack --mode development --config ./vendor/webpack.config.js"
   },
   "repository": {
     "type": "git",
